@@ -1,0 +1,541 @@
+
+body{
+    color: white;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    line-height: 140%;
+    letter-spacing: 100;
+}
+html a{
+    color: white;
+}
+*{
+
+    scroll-behavior: smooth;
+}
+nav{
+    left: 0;
+    padding: 1.5%;
+    overflow: hidden;
+    background-color: rgb(24, 29, 32);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    transition: .3s;
+    z-index: 999;
+    align-items: center;
+}
+nav .logo{
+    align-items: center;
+}
+nav .logo img{
+    width: 17%;
+    align-items: center;
+}
+nav li{
+    display: inline;
+    transition: .3s;
+    align-items: center;
+}
+nav a{
+    color: rgba(17, 25, 56);
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: .2s;
+    color: rgb(220, 221, 221);
+}
+nav a:hover{
+    color: rgb(134, 28, 28);
+    text-decoration: none;
+}
+#nav-button{
+    display: none;
+
+}
+label{
+    display: none;
+    font-weight: 600;
+}
+.bawahan{
+    margin-left: -50%;
+    margin: auto;
+    height: 2px;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-image: url(../background/1.jpg);
+}
+.page1 .container{
+    color: white;
+    margin: auto;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    
+}
+.page1-kiri{
+    margin-top: 10%;
+    width: 60%;
+}
+.page1-kiri img{
+    width: 120%;
+}
+.page1-kanan{
+    width: 60%;
+    font-size: 2.3rem;
+    color: rgb(255, 255, 255);
+    line-height: 120%;
+    margin-top: 10%;
+    margin-left: 10px;
+}
+.page1-kanan .isi{
+    text-align: justify;
+    margin-top: 10%;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    word-spacing: 4px;
+    letter-spacing: 1.4px;
+    line-height: 150%;
+    font-weight: 400;
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../background/2.jpg);
+    background-size: 100%;
+    margin: auto;
+}
+.page2 .container{
+    padding-top: 3%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.opening{
+    padding-top: 8%;
+    color: rgb(255, 255, 255);
+    font-size: 2.3rem;
+    margin-left: 32%;
+}
+.page2-kiri{
+    width: 60%;
+    height: auto;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+/* .page2-kiri:hover{
+    width: 60%;
+} */
+.page2-kiri img{
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 3%;
+    transition: .3s;
+    cursor: pointer;
+    transform: scale(100%);
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    padding-left: 2%;
+}
+/* .page2-kiri img:hover{
+    transform: scale(105%);
+    margin-right: 5%;
+} */
+.page2-kanan{
+    width: 30%;
+    align-items: center;
+    margin-top: 10%;
+    text-align: justify;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    word-spacing: 4px;
+    letter-spacing: 1.4px;
+    line-height: 150%;
+}
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-image: url(../background/3.jpg);
+    margin: auto;
+    color: rgb(255, 255, 255);
+}
+.page3 .container{
+    padding-top: 4%;
+    width: 80%;
+    margin: auto;
+}
+.page3 .opening{
+    margin-left: 43%;
+    color: rgb(255, 255, 255);
+}
+.page3 .deksripsi{
+    font-size: 1rem;
+    margin-bottom: 70px;
+}
+.isi{
+    margin-top: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    color: black;
+}
+.keberangkatan{
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+    font-size: 1rem;
+    flex-direction: column;
+    height: 130px;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+.keberangkatan input{
+    font-size: .8rem;
+}
+.paket{
+    border: 1px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 130px;
+    width: 140%;
+    font-size: 1rem;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+.paket ul{
+    font-size: .8rem;
+}
+.page3 .deksripsi{
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    word-spacing: 4px;
+    letter-spacing: 1.4px;
+    line-height: 150%;
+    font-size: 1rem;
+}
+button{
+    padding: 3%;
+    font-family: 'Poppins', sans-serif;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 20%;
+    background-color: rgba(255, 255, 255, 0.664);
+    font-size: 15rem;
+    transition: .2s;
+    cursor: pointer;
+    font-size: .5rem;
+    width: 120%;
+}
+button p{
+    font-size: 1rem;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.664);
+}
+footer{
+    color: white;
+    height: 34vh;
+    background-color: rgb(17, 17, 17);
+    margin: auto;
+    display: flex;
+}
+footer .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: .5rem;
+}
+.copyright a{
+    font-size: 2rem;
+}
+@media (min-width: 0px) and (max-width: 768px)  {
+    body{
+        margin: auto;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Poppins', sans-serif;
+        line-height: 140%;
+        letter-spacing: 100;
+        color: white;
+        overflow-x: hidden;
+    }
+    *{
+        scroll-behavior: smooth;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    nav{
+        left: 0;
+        padding: 2%;
+        overflow: hidden;
+        width: 100%;
+        position: fixed;
+        height: 7%;
+        display: flex;
+        justify-content: space-around;
+        transition: .3s;
+        z-index: 999;
+        align-items: center;
+    }
+    nav div{
+        align-items: center;
+    }
+    nav .logo{
+        width: 30;
+    }
+    nav .logo img{
+        width: 20%;
+    }
+    nav ul{
+        position: fixed;
+        top: 8%;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+    }
+    nav li{
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+    nav a{
+        width: 100%;
+        display: block;
+    }
+    nav li:hover{
+        background: rgb(rgb(134, 28, 28));
+    }
+    nav a:hover{
+        color: rgb(rgb(134, 28, 28));
+    }
+    label{
+        display: block;
+        padding: 0px 10px;
+        font-size: 1rem;
+        cursor: pointer;
+        position: absolute;
+        font-weight: 600;
+
+    }
+    label:hover{
+        color: rgb(rgb(134, 28, 28));
+    }
+    nav #nav-button:checked~ul{
+        max-height: 50%;
+        transition: all .7s ease-out
+    }
+    .page1{
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../background/hp1.jpg);
+    }
+    .page1 .container{
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        border-bottom: 1px rgb(255, 255, 255) solid;
+        
+    }
+    .page1-kiri{
+        margin-top: 70px;
+        width: 75%;
+    }
+    .page1-kiri img{
+        width: 90%;
+    }
+    .page1-kanan{
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        line-height: 120%;
+        margin-top: -12%;
+        padding-bottom: -15%;
+    }
+    .page1-kanan .isi{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        word-spacing: 4px;
+        letter-spacing: 1px;
+        line-height: 150%;
+        font-weight: 500;
+        text-align: justify;
+        }
+    .page2{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../background/hp2.jpg);
+        }
+.page2 .container{
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    border-bottom: 1px rgb(255, 255, 255) solid;    
+        }
+.opening{
+    margin: auto;
+    margin-left: 15%;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.page2-kiri{
+    margin-top: 20%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.page2-kiri img{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 3%;
+    transition: .3s;
+    cursor: pointer;
+    transform: scale(100%);
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    padding-left: 2%;
+}
+.page2-kiri img:hover{
+    transform: scale(105%);
+    margin-right: 5%;
+}
+.page2-kanan{
+    width: 90%;
+    align-items: center;
+    margin-top: 50px;
+    text-align: justify;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    word-spacing: 4px;
+    letter-spacing: 1.4px;
+    line-height: 150%;
+}
+        .page3{
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(../background/hp3.jpg);
+        }
+        .page3 .container{
+            margin: auto;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            border-bottom: 1px rgb(255, 255, 255) solid;
+            
+        }
+        .page3 .opening{
+            margin-left: 23%;
+            color: rgb(255, 255, 255);
+        }
+        .page3 .deksripsi{
+            font-size: 1rem;
+            margin-bottom: 70px;
+        }
+        .isi{
+            margin-top: 60px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            gap: 7%;
+            color: black;
+        }
+        .keberangkatan{
+            border: 1px rgb(255, 255, 255) solid;
+            border-radius: 10px;
+            padding: 2%;
+            display: flex;
+            font-size: 1rem;
+            flex-direction: column;
+            height: 130px;
+            justify-content: space-around;
+            background-color: rgba(255, 255, 255, 0.664);
+        }
+        .keberangkatan input{
+            font-size: .8rem;
+        }
+        .paket{
+            border: 1px rgb(255, 255, 255) solid;
+            border-radius: 10px;
+            padding: 4%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 130px;
+            width: 140%;
+            font-size: 1rem;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.664);
+        }
+        .paket ul{
+            font-size: .8rem;
+        }
+        .page3 .deksripsi{
+            width: 80%;
+            text-align: justify;
+            margin: auto;
+            word-spacing: 4px;
+            letter-spacing: 1.4px;
+            line-height: 150%;
+            font-size: 1rem;
+        }
+        button{
+            padding: 3%;
+            font-family: 'Poppins', sans-serif;
+            border: 0px;
+            border-radius: 10px;
+            margin-top: 20%;
+            background-color: rgba(255, 255, 255, 0.664);
+            font-size: 15rem;
+            transition: .2s;
+            cursor: pointer;
+            font-size: .5rem;
+            width: 120%;
+        }
+        button a{
+            font-size: .5rem;
+        }
+        button:hover{
+            background-color: rgba(255, 255, 255, 0.664);
+        }
+}
