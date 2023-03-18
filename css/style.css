@@ -282,7 +282,7 @@ footer .container{
         letter-spacing: 100;
         color: white;
         overflow-x: hidden;
-        width: 96%
+        width: 100%
     }
     *{
         scroll-behavior: smooth;
