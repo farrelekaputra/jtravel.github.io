@@ -451,7 +451,7 @@ footer .container{
     line-height: 150%;
 }
         .page3{
-            width: 100%;
+            width: 90%;
             height: 100vh;
             background-repeat: no-repeat;
             background-size: cover;
@@ -470,6 +470,7 @@ footer .container{
             color: rgb(255, 255, 255);
         }
         .page3 .deksripsi{
+            width: 100%
             font-size: 1rem;
             margin-bottom: 70px;
         }
