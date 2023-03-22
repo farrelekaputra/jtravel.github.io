@@ -470,9 +470,13 @@ footer .container{
             color: rgb(255, 255, 255);
         }
         .page3 .deksripsi{
-            width: 100%
-            font-size: 1rem;
-            margin-bottom: 70px;
+           font-size: 1rem;
+        color: rgb(255, 255, 255);
+        word-spacing: 4px;
+        letter-spacing: 1px;
+        line-height: 150%;
+        font-weight: 500;
+        text-align: justify;
         }
         .isi{
             margin-top: 60px;
